@@ -9,7 +9,7 @@ Docker Image will be stored on Dockerhub
 
 ## Deployment
 
-Open the `@cd-terraform` directory, update the `image_tag` variable with the required tag, and then run the commands below:
+Open the `@terraform` directory, update the `image_tag` variable with the required tag, and then run the commands below:
 
 
 Run these commands in the `@cd-terraform` folder:
