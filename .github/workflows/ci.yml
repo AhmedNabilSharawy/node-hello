@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  IMAGE_TAG: 1.0
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -46,8 +49,8 @@ jobs:
         run: docker build -t nawy-app .
 
       - name: Tag Docker image
-        run: docker tag nawy-app:latest ahmednabilsharawy/nawy-app:1.0
+        run: docker tag nawy-app:latest ahmednabilsharawy/nawy-app:${{ env.IMAGE_TAG }}
 
       - name: Push Docker image
-        run: docker push ahmednabilsharawy/nawy-app:1.0
-        
+        run: docker push ahmednabilsharawy/nawy-app:${{ env.IMAGE_TAG }}
+      
