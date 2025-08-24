@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  IMAGE_TAG: 1.0
+  IMAGE_TAG: ${{ github.sha }}
 
 jobs:
   lint:
@@ -53,4 +53,3 @@ jobs:
 
       - name: Push Docker image
         run: docker push ahmednabilsharawy/nawy-app:${{ env.IMAGE_TAG }}
-      
