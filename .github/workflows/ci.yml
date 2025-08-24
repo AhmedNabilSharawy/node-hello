@@ -57,3 +57,4 @@ jobs:
 
       - name: Push Docker image
         run: docker push ahmednabilsharawy/nawy-app:1.0
+        
